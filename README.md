@@ -1,7 +1,11 @@
 # NODEJS_Intro
 
 ## Install
-https://nodejs.org/ko/download/
+공식 홈페이지 : https://nodejs.org/ko/download/
+````
+// 터미널을 통하여 설치 확인
+node -v
+````
 
 ## Hello World
 ````
@@ -20,8 +24,11 @@ server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 ````
+
+## module
+
 ## npm
 
-## express.js
+## express
 
 ## router
