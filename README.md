@@ -78,5 +78,12 @@ npm install   // dependencies 모듈 설치
 }
 ```
 ## express
+**express**는 경량화 웹 개발 프레임 워크로, 노드를 이용한 웹 개발에 가장 널리 쓰이는 확장 모듈 중 하나입니다. (http 모듈 제공)
+```
+npm install express --save
+npm install -g express-generator
+express -e SampleAPP
+```
+![image](https://user-images.githubusercontent.com/33407116/171103151-7dcdc59e-88a0-4922-8121-4c843658ac0a.png)
 
 ## router
