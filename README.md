@@ -8,7 +8,7 @@ node -v
 ````
 
 ## Hello World
-````
+```Javascript
 const http = require('http');
 
 const hostname = '127.0.0.1';
@@ -23,9 +23,12 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
-````
+```
+**> node index.js** 로 실행
 
 ## module
+**모듈**이라는 개념은 노드로 개발한 애플리케이션을 이루는 기본 조각이다.
+
 
 ## npm
 
