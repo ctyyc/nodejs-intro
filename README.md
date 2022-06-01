@@ -87,3 +87,34 @@ express -e SampleAPP
 ![image](https://user-images.githubusercontent.com/33407116/171103151-7dcdc59e-88a0-4922-8121-4c843658ac0a.png)
 
 ## router
+express에서 **라우팅**이라는 개념은 클라이언트로부터 요청받은 URL과 뷰를 매칭시키는 것이라고 할 수 있습니다.
+```Javascript
+const express = require('express');
+const router = express.Router();
+
+const invest = require('./invest/accounts');
+const oauth = require('./oauth2.0');
+
+// GET home page
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
+
+// POST home page
+router.post('/', function(req, res, next) {
+  res.status(200);
+  res.setHeader('Content-Type', 'application/json');
+  res.setHeader('x-api-tran-id', req.get('x-api-tran-id'));
+  res.charset = 'utf-8';
+  
+  res.json({rsp_code:"00000",rsp_msg:"정상"});
+});
+
+router.use('/invest/accounts', invest);
+router.use('/oauth/2.0', oauth);
+
+module.exports = router;
+```
+  
+  
+참고 : 한 눈에 끝내는 Node.js
