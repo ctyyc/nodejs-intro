@@ -1,4 +1,4 @@
-# NODEJS_Intro
+# Node.js Intro
 
 ## Install
 공식 홈페이지 : https://nodejs.org/ko/download/
